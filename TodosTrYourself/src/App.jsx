@@ -24,6 +24,7 @@ function App() {
       setTodo(todos)
     }
   }, [])
+  
   useEffect(() => {
     localStorage.setItem("todos", JSON.stringify(todos))
   }, [todos])

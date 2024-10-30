@@ -7,7 +7,7 @@ function TodoItems({ todo }) {
   const { updateTodo, deleteTodo, toggleComplete } = useTodo()
 
   const toggleCompleted = () => {
-    toggleComplete(todo.id)
+    toggleComplete( .id)
   }
   const editabletodo = () => {
     updateTodo(todo.id, { ...todo, todo: todoText })
@@ -50,7 +50,7 @@ function TodoItems({ todo }) {
           <button className='bg-white p-2 rounded-lg hover:bg-slate-100 duration-200'
             onClick={() => deleteTodo(todo.id)}
           >❌</button>
-        </div>
+        </div>  
       </div>
     </div >
   )
